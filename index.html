@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visual Verse Studios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f4f0;
+      color: #333;
+    }
+    header {
+      background: url('hero-bg.jpg') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .btn {
+      padding: 10px 20px;
+      background: #a67c52;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .services, .why, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .form-section {
+      background: #fff3e0;
+      border-radius: 10px;
+      padding: 30px;
+    }
+    .form-section form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    footer a {
+      color: #a67c52;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Where Images Transform into Art</h1>
+    <p>Professional editing, retouching & manipulation</p>
+    <div>
+      <a href="#portfolio" class="btn">See Our Work</a>
+      <a href="#sample" class="btn">Send Sample Images</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">Product Retouching</div>
+      <div class="card">Lifestyle & Portrait Editing</div>
+      <div class="card">Background Replacement</div>
+      <div class="card">Digital Art Manipulation</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why Choose Us</h2>
+    <div class="why">
+      <div class="card">Creativity Meets Precision</div>
+      <div class="card">Quick Turnaround</div>
+      <div class="card">Tailored for Brands</div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Featured Work</h2>
+    <div class="portfolio">
+      <div class="card">Before/After Image 1</div>
+      <div class="card">Before/After Image 2</div>
+      <div class="card">Before/After Image 3</div>
+    </div>
+  </section>
+
+  <section id="sample" class="form-section">
+    <h2>Send Us Your Sample</h2>
+    <form>
+      <input type="file" multiple accept="image/*" required />
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Brief description or requirements"></textarea>
+      <button type="submit" class="btn">Submit & Get Free Preview</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Visual Verse Studios. All Rights Reserved.</p>
+    <p>
+      <a href="#">About</a> |
+      <a href="#">Services</a> |
+      <a href="#">Contact</a>
+    </p>
+    <p>Email: hello@visualversestudios.com</p>
+  </footer>
+</body>
+</html>
